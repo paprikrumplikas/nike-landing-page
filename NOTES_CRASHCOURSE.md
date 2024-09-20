@@ -29,6 +29,7 @@ Tailwind CSS crashcourse
 2. CUSTOMIZATION:
     1. If predefined utility classes are not enough, eg we want to use a custom color:
     in tailwind.config.jss extned the theme and add color, see chestnut in example below
+    2. put custom values in sq brackets like bg-[#ffffff]
 
 
 @learning @crucial
