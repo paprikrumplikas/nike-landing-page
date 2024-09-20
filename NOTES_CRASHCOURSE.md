@@ -34,7 +34,7 @@ Tailwind CSS crashcourse
 @learning @crucial
 2. REUSABILITY IN TAILWIND CSS:
     1. Break down things into components like CustomButton, CustomInput, etc.
-    2. Use directives in Tailwind CSS: 
+    2. Use directives in Tailwind CSS (main.css): 
     Tailwind has three built-in layers: base, components, and utilities.
     Using @layer components for Reusability: The @layer components directive is typically used to define reusable components. By defining components inside this layer, you make sure your custom components are available globally and can be reused throughout your project. 
     See example `card` and `special-button` below
