@@ -1,9 +1,9 @@
 import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
-
+import Nav from "./components/Nav.jsx";
 
 const App = () => (
   <main className="relative">
-    {/*<Nav />*/}
+    <Nav />
 
     {/** @learning @note the custom utility classes that we defined in index.css */}
     <section className="xl:padding-1 wide:padding-r padding-b">
