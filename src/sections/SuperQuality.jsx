@@ -9,7 +9,7 @@ const SuperQuality = () => {
             // max-lg:flex-col = on screens smaller than 1024px we are gonna have a col
             className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
         >
-            {/** wrapper for  */}
+            {/** wrapper for text and button*/}
             <div className="flex flex-1 flex-col">
                 <h2 className="text-4xl font-bold font-palanquin lg:max-w-lg">
                     We Provide You
