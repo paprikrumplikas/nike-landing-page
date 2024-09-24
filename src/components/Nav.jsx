@@ -16,6 +16,7 @@ const Nav = () => {
         // e.g. <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>, <figure>, <figcaption>, <mark>, <time>
         < header className="padding-x py-8 absolute z-10 w-full">
             <nav className="flex justify-between items-center max-container">
+                {/** @learning @crucial this is how we make the home icon a link to home */}
                 <a href="/">
                     <img
                         src={headerLogo}
@@ -27,6 +28,7 @@ const Nav = () => {
                 <ul className="flex-1 justify-center items-center gap-16 hidden lg:flex">
                     {navLinks.map((item) =>
                         <li key={item.label}>
+                            {/** @crucial @learning anchor link for scrolling: If you want to scroll to a specific section using the existing links, you just need to ensure that the href values in the navLinks array correspond to the id values of the sections you want to scroll to. */}
                             <a
                                 href={item.href}
                                 className="font-montserrat leading-normal text-lg text-slate-grey"
