@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Button from "../components/Button";
 import ShoeCard from "../components/ShoeCard";
 import { arrowRight } from "../assets/icons";
@@ -9,6 +11,10 @@ import { bigShoe1 } from "../assets/images";
 
 
 const Hero = () => {
+
+    const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+
+
     return (
         // on XL, it is flex-row, on mobile it it flex-col
         // max-container is our own style
@@ -64,13 +70,15 @@ const Hero = () => {
                 />
 
                 {/** container for the little 3 images that allows to change the big image */}
-                <div>
+                {/** @learning  absolute: removes the element from the normal document flow, allowing it to be positioned relative to its nearest positioned ancestor (or the initial containing block*/}
+                {/** @crucial By setting position: relative; on a parent element, you create a positioning context for the absolutely positioned child. This means the child's coordinates (top, right, bottom, left) will be calculated relative to the boundaries of this parent, not the entire viewport. */}
+                <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
                     {shoes.map((shoe) => (
                         <div key={shoe}>
                             <ShoeCard
                                 imgURL={shoe}
                                 changeBigShoeImage={() => { }}
-                                bigShoeImgage=""
+                                bigShoeImg=""
                             />
                         </div>
                     ))}
