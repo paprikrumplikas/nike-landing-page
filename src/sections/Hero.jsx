@@ -12,15 +12,15 @@ import { bigShoe1 } from "../assets/images";
 
 const Hero = () => {
 
+    // this is a string
     const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
-
 
     return (
         // on XL, it is flex-row, on mobile it it flex-col
         // max-container is our own style
         <section
             id="home"
-            className="w-full flex xl:flex-row flex-col justify-center min-h-screen border-2 gap-10 max-container"
+            className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
         >
 
             {/** left part of the hero section: text and stats */}
@@ -62,7 +62,7 @@ const Hero = () => {
             {/** right part of the hero section: img */}
             <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
                 <img
-                    src={bigShoe1}
+                    src={bigShoeImg}
                     alt="shoe collection"
                     width={610}
                     height={540}
@@ -76,9 +76,9 @@ const Hero = () => {
                     {shoes.map((shoe) => (
                         <div key={shoe}>
                             <ShoeCard
-                                imgURL={shoe}
-                                changeBigShoeImage={() => { }}
-                                bigShoeImg=""
+                                imgURL={shoe}   // object
+                                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                                bigShoeImg={bigShoeImg} // string
                             />
                         </div>
                     ))}

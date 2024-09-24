@@ -2,11 +2,12 @@ import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer,
 import Nav from "./components/Nav.jsx";
 
 const App = () => (
+  // @crucial @learning he relative class in the <main> element is used to set the positioning context for its child elements. When you apply position: relative to an element, it allows you to position its child elements absolutely within it. T
   <main className="relative">
     <Nav />
 
     {/** @learning @note the custom utility classes that we defined in index.css */}
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />
     </section>
 

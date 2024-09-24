@@ -1,4 +1,6 @@
 
+// @note imgURL is actually an object that contains the thumbnail and bigShoe properties
+// bigShoeImg, on the other hand, is a string, see changeBigShoeImage(imgURL.bigShoe)
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
 
     const handleClick = () => {
@@ -7,7 +9,7 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
 
     return (
         <div className={`border-2 rounded-xl 
-        ${bigShoeImg === imgURL
+        ${bigShoeImg === imgURL.bigShoe
                 ? 'border-coral-red'
                 : 'border-transparent'
             } cursor-pointer max-sm:flex-1

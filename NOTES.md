@@ -45,4 +45,13 @@ LEARNINGS
 1. Semantic tags: @learning @crucial this could have been a div but semantic tags are better for readability 
         // e.g. <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>, <figure>, <figcaption>, <mark>, <time>
 2. Install extension: tailwind css intellisense
+3. GitHub was asking for your credentials every time you tried to push changes to a remote repository.
+addressed the issue by configuring Git to use SSH for authentication instead of HTTPS. This approach is more secure and convenient, as it eliminates the need to enter your credentials repeatedly.
+    1. 1. Generate an SSH Key:
+    2. Add the SSH Key to the SSH Agent:
+    3. Add the SSH Key to GitHub:
+    4. Change the Remote URL to Use SSH:
+    5. Configure Git to Use SSH by Default:
+
+
 
